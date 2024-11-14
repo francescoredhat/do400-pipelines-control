@@ -1,9 +1,6 @@
 pipeline {
-    agent {
-        node {
-            any
-        }
-    }
+    agent any
+    
     parameters {
         booleanParam(name: "RUN_FRONTEND_TESTS", defaultValue: true)
     }
